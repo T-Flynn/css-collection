@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>mock-twitter-favorite</title>
+    <style>
+        .wrapper * {
+            vertical-align: middle;
+        }
+
+        .favorite-icon-transition,
+        .favorite-icon-animation {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background-image: url('./img/web_heart_animation_edge.png');
+            background-position: left;
+            background-repeat: no-repeat;
+            background-size: 2900%;
+            cursor: pointer;
+        }
+
+        .favorite-icon-transition:hover {
+            background-position: right;
+            transition: background-position 1s steps(28);
+        }
+
+        .favorite-icon-animation:hover {
+            animation: fave-heart 1s steps(28);
+        }
+
+        @keyframes fave-heart {
+            0% {
+                background-position: left;
+            }
+            100% {
+                background-position: right;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <span>transition 实现</span>
+        <i class="favorite-icon-transition"></i>
+    </div>
+    <div class="wrapper">
+        <span>animation 实现</span>
+        <i class="favorite-icon-animation"></i>
+    </div>
+</body>
+<script>
+</script>
+
+</html>
