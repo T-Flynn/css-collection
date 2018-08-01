@@ -6,3 +6,6 @@
 
 * ##### ripple
 ![ripple](./img/gifs/ripple.gif)
+
+* ##### favorite
+![ripple](./img/gifs/fav.gif)
